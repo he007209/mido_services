@@ -1,0 +1,2620 @@
+allow-lan: true
+bind-address: '*'
+dns:
+    default-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    enable: true
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    fallback:
+        - 1.1.1.1
+        - 8.8.8.8
+    fallback-filter:
+        domain:
+            - +.google.com
+            - +.facebook.com
+            - +.youtube.com
+        geoip: true
+        geoip-code: CN
+        geosite:
+            - gfw
+        ipcidr:
+            - 240.0.0.0/4
+    ipv6: false
+    nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    proxy-server-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    respect-rules: true
+    use-hosts: true
+log-level: info
+mixed-port: 7890
+mode: rule
+proxies:
+    - cipher: auto
+      client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: movie
+      name: "B - \U0001F1ED\U0001F1F0 HK 01 TG: @nodpai"
+      network: grpc
+      packet-encoding: xudp
+      port: 10128
+      reality-opts:
+        public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+        short-id: 686c0ef0
+      server: hk3-r.link-t7.com
+      servername: s0.awsstatic.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: A537EA13-778F-4967-953F-EE29617B8E55
+    - cipher: auto
+      client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: update
+      name: "B - \U0001F1ED\U0001F1F0 HK 02 TG: @nodpai"
+      network: grpc
+      packet-encoding: xudp
+      port: 10127
+      reality-opts:
+        public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+        short-id: 686c0ef0
+      server: hk2-r.link-t7.com
+      servername: s0.awsstatic.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: A537EA13-778F-4967-953F-EE29617B8E55
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1ED\U0001F1F0 HK 03 TG: @nodpai"
+      network: ws
+      port: 16632
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 6e73dc5f-5261-4bb0-b116-c28a2144cd7b
+      ws-opts:
+        headers:
+            Host: 066d6e9a0ea2920f4703e353a6c38455.mobgslb.tbcache.com
+        path: /
+    - name: "B - \U0001F1ED\U0001F1F0 HK 04 TG: @nodpai"
+      password: f8eca8df-a1a5-4918-a194-d34112a3673f
+      port: 11443
+      server: hkgU654714155239231.edge.huawei-static.com
+      tls: true
+      type: http
+      username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1ED\U0001F1F0 HK 05 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: planb.mojcn.com
+      type: vmess
+      uuid: f05a041d-4fe6-4c1d-807b-1633f234f73d
+      ws-opts:
+        headers:
+            Host: 030cbf05827014581a6bf197a80dd9a0.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1ED\U0001F1F0 HK 06 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1ED\U0001F1F0 HK 07 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1a97d136-a66b-4959-a9cc-42ab7fee9462
+      ws-opts:
+        headers:
+            Host: 77ca334818bda4db538ebedbe42e0859.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      client-fingerprint: chrome
+      http-opts:
+        method: GET
+        path:
+            - /
+      name: "B - \U0001F1ED\U0001F1F0 HK 08 TG: @nodpai"
+      network: http
+      port: 15079
+      server: 38.22.93.20
+      tls: false
+      type: vmess
+      uuid: 66e12acd-4f93-4e35-e229-5f93e2f379e1
+    - name: "B - \U0001F1ED\U0001F1F0 HK 09 TG: @nodpai"
+      obfs: ""
+      obfs-password: ""
+      password: 3286b74d-a633-401f-8e22-6e8e61c5f1d9
+      port: 5555
+      server: 45.192.195.52
+      skip-cert-verify: true
+      sni: 45.192.195.52
+      type: hysteria2
+      udp: true
+    - cipher: none
+      name: "B - \U0001F1ED\U0001F1F0 HK 10 TG: @nodpai"
+      password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: ylnhh.us.ci
+        mode: websocket
+        mux: false
+        path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
+        skip-cert-verify: false
+        tls: true
+      port: 443
+      server: 139.162.174.148
+      skip-cert-verify: false
+      type: ss
+      udp: false
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 11 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: planb.mojcn.com
+      type: vmess
+      udp: true
+      uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+      ws-headers:
+        Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 12 TG: @nodpai"
+      network: ws
+      port: 16632
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 1408c28f-5c99-4e5c-8897-d675a40c45b8
+      ws-opts:
+        headers:
+            Host: 3bec5ff0f0da7d3ef35dbea327b8f105.mobgslb.tbcache.com
+        path: /
+    - alterId: 2
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 13 TG: @nodpai"
+      network: ws
+      port: 43963
+      server: hk02cm.ifastcdncache.com
+      tls: false
+      type: vmess
+      uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+      ws-headers:
+        Host: s2.hdslb.com
+      ws-opts:
+        headers:
+            Host: s2.hdslb.com
+        path: /
+      ws-path: /
+    - name: "C - \U0001F1ED\U0001F1F0 HK 14 TG: @nodpai"
+      password: c3a8753e-317e-479e-bee7-01adf5e2af7e
+      port: 8443
+      server: fre.guren1.me
+      skip-cert-verify: true
+      sni: python.org
+      type: hysteria2
+    - alterId: 2
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 15 TG: @nodpai"
+      network: ws
+      port: 26852
+      server: hkvs011.ifastcdncache.com
+      tls: false
+      type: vmess
+      uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+      ws-headers:
+        Host: p4-plat.wskwai.com
+      ws-opts:
+        headers:
+            Host: p4-plat.wskwai.com
+        path: /
+      ws-path: /
+    - alterId: "0"
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 16 TG: @nodpai"
+      network: ws
+      port: 16632
+      server: planb.mojcn.com
+      skip-cert-verify: false
+      tls: false
+      type: vmess
+      udp: true
+      uuid: 5f272295-fb23-4ffc-a076-f75e6d4e4ce0
+      ws-opts:
+        headers:
+            Host: 2a0805d553d3abef159d2f4a1afa5914.mobgslb.tbcache.com
+        path: /
+      xudp: true
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 17 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 18 TG: @nodpai"
+      network: ws
+      port: 16632
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 19 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: m.cnmjin.net
+      type: vmess
+      uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+      ws-opts:
+        headers:
+            Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 20 TG: @nodpai"
+      network: ws
+      port: 16632
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 2a2645fe-34b6-4b0b-87bb-241cd17bb71f
+      ws-opts:
+        headers:
+            Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 21 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: e4f74364-435b-49f1-bdbd-60a24dc99588
+      ws-opts:
+        headers:
+            Host: 26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 22 TG: @nodpai"
+      network: ws
+      port: 16632
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 7e49287b-d3b2-4abc-b646-879165dae7dc
+      ws-opts:
+        headers:
+            Host: 72fbf9ea0e889e56093a40dec0b5adb6.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 23 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 7e49287b-d3b2-4abc-b646-879165dae7dc
+      ws-opts:
+        headers:
+            Host: 72fbf9ea0e889e56093a40dec0b5adb6.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 24 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 2a2645fe-34b6-4b0b-87bb-241cd17bb71f
+      ws-opts:
+        headers:
+            Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1ED\U0001F1F0 HK 25 TG: @nodpai"
+      network: ws
+      port: 16622
+      server: planb.mojcn.com
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-headers:
+        Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - cipher: chacha20-ietf
+      name: "D - \U0001F1ED\U0001F1F0 HK 26 TG: @nodpai"
+      obfs: plain
+      obfs-param: 95095147215.microsoft.com
+      password: MkneJaoFZXZr
+      port: 15177
+      protocol: auth_aes128_md5
+      protocol-param: 147215:dbVN2NGvcqwKdC63
+      server: ieplqz.bblink88.com
+      type: ssr
+    - name: "B - \U0001F1F9\U0001F1FC TW 01 TG: @nodpai"
+      password: exaxgqkKkd0TAMrCxeonWg==
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      sni: twmoon1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      udp: true
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - name: "B - \U0001F1F9\U0001F1FC TW 02 TG: @nodpai"
+      password: mrwdfNTD8M79LCukCieldrqZWqs=
+      port: 1443
+      server: twmoon1-cdn-route.couldflare-cdn.com
+      tls: true
+      type: http
+      username: mrwdfNTD8M79LCukCieldrqZWqs=
+    - name: "B - \U0001F1F9\U0001F1FC TW 03 TG: @nodpai"
+      password: f8eca8df-a1a5-4918-a194-d34112a3673f
+      port: 23443
+      server: t2cache.71edgeiqiyi.com
+      tls: true
+      type: http
+      username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    - name: "B - \U0001F1F9\U0001F1FC TW 04 TG: @nodpai"
+      password: f8eca8df-a1a5-4918-a194-d34112a3673f
+      port: 22443
+      server: t4cache.71edgeiqiyi.com
+      tls: true
+      type: http
+      username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    - client-fingerprint: chrome
+      flow: xtls-rprx-vision
+      name: "B - \U0001F1F9\U0001F1FC TW 05 TG: @nodpai"
+      port: 443
+      server: taipei1.ap221.com
+      servername: taipei.ap221.com
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: a94f5c44-239c-4e67-8d0d-20dbbd9e0f85
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1F9\U0001F1FC TW 06 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 7e49287b-d3b2-4abc-b646-879165dae7dc
+      ws-opts:
+        headers:
+            Host: 72fbf9ea0e889e56093a40dec0b5adb6.mobgslb.tbcache.com
+        path: /
+    - client-fingerprint: chrome
+      encryption: none
+      name: "C - \U0001F1F9\U0001F1FC TW 07 TG: @nodpai"
+      network: ws
+      port: 6235
+      security: tls
+      server: 125.227.219.98
+      servername: baidu.com
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d146
+      ws-opts:
+        headers:
+            Host: baidu.com
+        path: /xxxxhttp
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 08 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1a97d136-a66b-4959-a9cc-42ab7fee9462
+      ws-opts:
+        headers:
+            Host: 77ca334818bda4db538ebedbe42e0859.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 09 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+      ws-opts:
+        headers:
+            Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 10 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      udp: true
+      uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+      ws-opts:
+        headers:
+            Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 11 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 2a2645fe-34b6-4b0b-87bb-241cd17bb71f
+      ws-opts:
+        headers:
+            Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 12 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: e4f74364-435b-49f1-bdbd-60a24dc99588
+      ws-opts:
+        headers:
+            Host: 26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 13 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-headers:
+        Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 14 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+      ws-headers:
+        Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 15 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: planb.mojcn.com
+      type: vmess
+      uuid: e4f74364-435b-49f1-bdbd-60a24dc99588
+      ws-opts:
+        headers:
+            Host: 26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 16 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 426069f8-bd51-4ca1-8be0-406e113e8d6d
+      ws-opts:
+        headers:
+            Host: 58d3f211c751f812d25139d33ea67d2d.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 17 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 18 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 426069f8-bd51-4ca1-8be0-406e113e8d6d
+      ws-opts:
+        headers:
+            Host: 58d3f211c751f812d25139d33ea67d2d.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 19 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
+      ws-opts:
+        headers:
+            Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 20 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 21 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1408c28f-5c99-4e5c-8897-d675a40c45b8
+      ws-opts:
+        headers:
+            Host: 3bec5ff0f0da7d3ef35dbea327b8f105.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 22 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 5f272295-fb23-4ffc-a076-f75e6d4e4ce0
+      ws-opts:
+        headers:
+            Host: 2a0805d553d3abef159d2f4a1afa5914.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 23 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-headers:
+        Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 24 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 25 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      udp: true
+      uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
+      ws-headers:
+        Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F9\U0001F1FC TW 26 TG: @nodpai"
+      network: ws
+      port: 16616
+      server: m.cnmjin.net
+      type: vmess
+      uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+      ws-opts:
+        headers:
+            Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+        path: /
+    - name: "A - \U0001F1EF\U0001F1F5 JP 01 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20181
+      server: jp1.dexlos.com
+      skip-cert-verify: false
+      sni: jp1.dexlos.com
+      type: hysteria2
+      udp: true
+    - name: "A - \U0001F1EF\U0001F1F5 JP 02 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20373
+      server: jp2.dexlos.com
+      skip-cert-verify: false
+      sni: jp2.dexlos.com
+      type: hysteria2
+      udp: true
+    - cipher: aes-128-gcm
+      name: "A - \U0001F1EF\U0001F1F5 JP 03 TG: @nodpai"
+      password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: aoe.o.eoa.ccwu.cc
+        mode: websocket
+        mux: false
+        path: /?enc\=aes-128-gcm
+        skip-cert-verify: false
+        tls: true
+      port: 443
+      server: 96.126.190.196
+      type: ss
+    - name: "A - \U0001F1EF\U0001F1F5 JP 04 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20261
+      server: jp2.dexlos.com
+      sni: jp2.dexlos.com
+      type: hysteria2
+    - cipher: auto
+      client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: update
+      name: "A - \U0001F1EF\U0001F1F5 JP 05 TG: @nodpai"
+      network: grpc
+      packet-encoding: xudp
+      port: 10034
+      reality-opts:
+        public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+        short-id: 686c0ef0
+      server: jp4-r.link-t7.com
+      servername: s0.awsstatic.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: A537EA13-778F-4967-953F-EE29617B8E55
+    - alpn:
+        - h3
+      congestion-controller: bbr
+      name: "B - \U0001F1EF\U0001F1F5 JP 06 TG: @nodpai"
+      password: 9546877c-03b4-4fd9-9a2b-c64834feda4f
+      port: 61425
+      server: 115.187.16.7
+      skip-cert-verify: true
+      sni: www.python.org
+      type: tuic
+      udp: true
+      udp-relay-mode: native
+      uuid: 9546877c-03b4-4fd9-9a2b-c64834feda4f
+    - name: "B - \U0001F1EF\U0001F1F5 JP 07 TG: @nodpai"
+      password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+      port: 443
+      server: vpn-jp-005.fastervpn.world
+      skip-cert-verify: true
+      sni: vpn-jp-005.fastervpn.world
+      type: hysteria2
+    - cipher: auto
+      client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: update
+      name: "B - \U0001F1EF\U0001F1F5 JP 08 TG: @nodpai"
+      network: grpc
+      packet-encoding: xudp
+      port: 10032
+      reality-opts:
+        public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+        short-id: 686c0ef0
+      server: jp2-r.link-t7.com
+      servername: s0.awsstatic.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: A537EA13-778F-4967-953F-EE29617B8E55
+    - name: "B - \U0001F1EF\U0001F1F5 JP 09 TG: @nodpai"
+      password: 67c92700-c51e-4264-8a49-1f9df68762ed
+      port: 45011
+      server: jpa.niaot.com
+      skip-cert-verify: true
+      sni: www.bing.com
+      type: hysteria2
+      udp: true
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1EF\U0001F1F5 JP 10 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 4c724177-302e-4fec-873c-8497faacd892
+      ws-opts:
+        headers:
+            Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1EF\U0001F1F5 JP 11 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: planb.mojcn.com
+      type: vmess
+      uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+      ws-opts:
+        headers:
+            Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+        path: /
+    - name: "B - \U0001F1EF\U0001F1F5 JP 12 TG: @nodpai"
+      password: f8eca8df-a1a5-4918-a194-d34112a3673f
+      port: 443
+      server: cj04.71edgeiqiyi.com
+      tls: true
+      type: http
+      username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 13 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 7e49287b-d3b2-4abc-b646-879165dae7dc
+      ws-opts:
+        headers:
+            Host: 72fbf9ea0e889e56093a40dec0b5adb6.mobgslb.tbcache.com
+        path: /
+    - cipher: none
+      name: "C - \U0001F1EF\U0001F1F5 JP 14 TG: @nodpai"
+      password: 3e96ef7d-8637-42c2-ac73-75182196e755
+      plugin: v2ray-plugin
+      plugin-opts:
+        host: mfvpn.fuchen.indevs.in
+        mode: websocket
+        mux: false
+        path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+        skip-cert-verify: false
+        tls: true
+      port: 443
+      server: 188.166.247.45
+      skip-cert-verify: false
+      type: ss
+      udp: false
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 15 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: planb.mojcn.com
+      type: vmess
+      udp: true
+      uuid: 881da2de-238e-425e-a7e7-389f4842e545
+      ws-headers:
+        Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 16 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: m.cnmjin.net
+      type: vmess
+      uuid: fd0398c2-33c8-45d1-bdf9-a97b576cac45
+      ws-opts:
+        headers:
+            Host: 7f1ebaae45bada2b20dc845012ddd3a4.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 17 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: planb.mojcn.com
+      type: vmess
+      udp: true
+      uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+      ws-headers:
+        Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - name: "C - \U0001F1EF\U0001F1F5 JP 18 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20719
+      server: jp4.dexlos.com
+      sni: jp4.dexlos.com
+      type: hysteria2
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 19 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1408c28f-5c99-4e5c-8897-d675a40c45b8
+      ws-opts:
+        headers:
+            Host: 3bec5ff0f0da7d3ef35dbea327b8f105.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 20 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-headers:
+        Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 21 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: m.cnmjin.net
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-headers:
+        Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 22 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1408c28f-5c99-4e5c-8897-d675a40c45b8
+      ws-opts:
+        headers:
+            Host: 3bec5ff0f0da7d3ef35dbea327b8f105.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1EF\U0001F1F5 JP 23 TG: @nodpai"
+      network: ws
+      port: 16617
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 7927975e-9616-412b-b508-983ab960377d
+      ws-headers:
+        Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - name: "D - \U0001F1EF\U0001F1F5 JP 24 TG: @nodpai"
+      password: f8eca8df-a1a5-4918-a194-d34112a3673f
+      port: 7443
+      server: jc7U654714155239.asia.steamliveonline.com
+      tls: true
+      type: http
+      username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    - client-fingerprint: chrome
+      host: navi.bankrate.com
+      name: "D - \U0001F1EF\U0001F1F5 JP 25 TG: @nodpai"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+        short-id: 2da72ce6
+      security: reality
+      server: 176.97.73.155
+      servername: navi.bankrate.com
+      tls: true
+      type: vless
+      uuid: 85b50963-cd84-4caf-8699-2540a2e34bd1
+    - client-fingerprint: chrome
+      encryption: none
+      host: navi.bankrate.com
+      name: "D - \U0001F1EF\U0001F1F5 JP 26 TG: @nodpai"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+        short-id: 2da72ce6
+      security: reality
+      server: 176.97.73.155
+      servername: navi.bankrate.com
+      tls: true
+      type: vless
+      uuid: f55f46e2-8b58-400e-8fd0-0203c012a53a
+    - name: "A - \U0001F1F8\U0001F1EC SG 01 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20955
+      server: sg5.dexlos.com
+      sni: sg5.dexlos.com
+      type: hysteria2
+    - name: "A - \U0001F1F8\U0001F1EC SG 02 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20610
+      server: sg4.dexlos.com
+      sni: sg4.dexlos.com
+      type: hysteria2
+    - name: "A - \U0001F1F8\U0001F1EC SG 03 TG: @nodpai"
+      obfs: salamander
+      obfs-password: xK9mN2pLq5vR8wB3
+      password: A537EA13-778F-4967-953F-EE29617B8E55
+      port: 20658
+      server: sg4.dexlos.com
+      sni: sg4.dexlos.com
+      type: hysteria2
+    - client-fingerprint: chrome
+      ech-opts:
+        enable: true
+        query-server-name: encryptedsni.com
+      name: "A - \U0001F1F8\U0001F1EC SG 04 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 173.242.113.185
+      servername: ynwta9.api-edge.fgfw.qzz.io
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 26524cce-d514-4014-a426-365fb266a14d
+      ws-opts:
+        headers:
+            Host: ynwta9.api-edge.fgfw.qzz.io
+        path: /danfeng?ed=2560
+    - cipher: auto
+      client-fingerprint: chrome
+      grpc-opts:
+        grpc-service-name: update
+      name: "B - \U0001F1F8\U0001F1EC SG 05 TG: @nodpai"
+      network: grpc
+      packet-encoding: xudp
+      port: 10038
+      reality-opts:
+        public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+        short-id: 686c0ef0
+      server: sg3-r.link-t7.com
+      servername: d1.awsstatic.com
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: A537EA13-778F-4967-953F-EE29617B8E55
+    - client-fingerprint: chrome
+      ech-opts:
+        enable: true
+        query-server-name: encryptedsni.com
+      name: "B - \U0001F1F8\U0001F1EC SG 06 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 206.189.119.143
+      servername: ynwta9.api-edge.fgfw.qzz.io
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 26524cce-d514-4014-a426-365fb266a14d
+      ws-opts:
+        headers:
+            Host: ynwta9.api-edge.fgfw.qzz.io
+        path: /danfeng?ed=2560
+    - name: "B - \U0001F1F8\U0001F1EC SG 07 TG: @nodpai"
+      password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+      port: 443
+      server: vpn-sg-001.fastervpn.world
+      skip-cert-verify: true
+      sni: vpn-sg-001.fastervpn.world
+      type: hysteria2
+    - client-fingerprint: chrome
+      ech-opts:
+        enable: true
+        query-server-name: encryptedsni.com
+      name: "B - \U0001F1F8\U0001F1EC SG 08 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 104.250.122.7
+      servername: ynwta9.api-edge.fgfw.qzz.io
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 26524cce-d514-4014-a426-365fb266a14d
+      ws-opts:
+        headers:
+            Host: ynwta9.api-edge.fgfw.qzz.io
+        path: /danfeng?ed=2560
+    - client-fingerprint: chrome
+      name: "B - \U0001F1F8\U0001F1EC SG 09 TG: @nodpai"
+      network: ws
+      port: 10001
+      server: 218.155.125.99
+      servername: ynwta9.api-edge.fgfw.qzz.io
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      udp: true
+      uuid: 26524cce-d514-4014-a426-365fb266a14d
+      ws-opts:
+        headers:
+            Host: ynwta9.api-edge.fgfw.qzz.io
+        path: /danfeng?ed=2560
+    - client-fingerprint: chrome
+      encryption: none
+      name: "B - \U0001F1F8\U0001F1EC SG 10 TG: @nodpai"
+      network: ws
+      port: 443
+      security: tls
+      server: 47.81.56.99
+      servername: ynwta9.api-edge.fgfw.qzz.io
+      tls: true
+      type: vless
+      uuid: 26524cce-d514-4014-a426-365fb266a14d
+      ws-opts:
+        headers:
+            Host: ynwta9.api-edge.fgfw.qzz.io
+        path: /danfeng?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1F8\U0001F1EC SG 11 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1F8\U0001F1EC SG 12 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 6e73dc5f-5261-4bb0-b116-c28a2144cd7b
+      ws-opts:
+        headers:
+            Host: 066d6e9a0ea2920f4703e353a6c38455.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 13 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: planb.mojcn.com
+      type: vmess
+      udp: true
+      uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
+      ws-headers:
+        Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - client-fingerprint: chrome
+      ech-opts:
+        enable: true
+        query-server-name: encryptedsni.com
+      name: "C - \U0001F1F8\U0001F1EC SG 14 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 134.209.106.237
+      servername: ynwta9.api-edge.fgfw.qzz.io
+      skip-cert-verify: false
+      tfo: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 26524cce-d514-4014-a426-365fb266a14d
+      ws-opts:
+        headers:
+            Host: ynwta9.api-edge.fgfw.qzz.io
+        path: /danfeng?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 15 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: planb.mojcn.com
+      type: vmess
+      udp: true
+      uuid: 881da2de-238e-425e-a7e7-389f4842e545
+      ws-headers:
+        Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 16 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: planb.mojcn.com
+      type: vmess
+      uuid: e4f74364-435b-49f1-bdbd-60a24dc99588
+      ws-opts:
+        headers:
+            Host: 26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 17 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 5f272295-fb23-4ffc-a076-f75e6d4e4ce0
+      ws-opts:
+        headers:
+            Host: 2a0805d553d3abef159d2f4a1afa5914.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 18 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 1923c5c0-71b8-42fb-8abd-db1c82c46d49
+      ws-headers:
+        Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 59122e391c46090446f6ac8be22c8e38.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 19 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 5f272295-fb23-4ffc-a076-f75e6d4e4ce0
+      ws-opts:
+        headers:
+            Host: 2a0805d553d3abef159d2f4a1afa5914.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 20 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 21 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 454a7451-9380-489b-91cb-2b5d2214f18a
+      ws-headers:
+        Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 740db99bdd99deb0b1510e7edca44162.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - name: "C - \U0001F1F8\U0001F1EC SG 22 TG: @nodpai"
+      password: f8eca8df-a1a5-4918-a194-d34112a3673f
+      port: 21443
+      server: sinnode1.71edgeiqiyi.com
+      tls: true
+      type: http
+      username: f8eca8df-a1a5-4918-a194-d34112a3673f
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 23 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1408c28f-5c99-4e5c-8897-d675a40c45b8
+      ws-opts:
+        headers:
+            Host: 3bec5ff0f0da7d3ef35dbea327b8f105.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 24 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: m.cnmjin.net
+      type: vmess
+      udp: true
+      uuid: 881da2de-238e-425e-a7e7-389f4842e545
+      ws-headers:
+        Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1F8\U0001F1EC SG 25 TG: @nodpai"
+      network: ws
+      port: 16618
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 286eb1ba-2e75-462e-b94d-49301c458efc
+      ws-opts:
+        headers:
+            Host: 4e7408739875899bcdfbb81d18c2abc0.mobgslb.tbcache.com
+        path: /
+    - client-fingerprint: ios
+      grpc-opts:
+        grpc-service-name: data
+      name: "C - \U0001F1F8\U0001F1EC SG 26 TG: @nodpai"
+      network: grpc
+      port: 2053
+      server: yx2.niaot.com
+      servername: eab563c642e4.m3u8use.yunniao.org
+      skip-cert-verify: false
+      tls: true
+      type: vless
+      udp: true
+      uuid: 67c92700-c51e-4264-8a49-1f9df68762ed
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "B - \U0001F1FA\U0001F1F8 US 01 TG: @nodpai"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: -ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk
+        short-id: c6118398
+      security: reality
+      server: 2.26.21.32
+      servername: gateway.icloud.com
+      tls: true
+      type: vless
+      uuid: 322ffd77-9adc-4e10-8302-a8bcc14555a0
+    - name: "B - \U0001F1FA\U0001F1F8 US 02 TG: @nodpai"
+      password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+      port: 443
+      server: vpn-us-006.fastervpn.world
+      skip-cert-verify: true
+      sni: vpn-us-006.fastervpn.world
+      type: hysteria2
+    - client-fingerprint: random
+      name: "B - \U0001F1FA\U0001F1F8 US 03 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 83.229.127.153
+      servername: subtaler.trevely.de5.net
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f17d7eb4-ba07-463a-9ad8-3ec30f19dca2
+      ws-opts:
+        headers:
+            Host: subtaler.trevely.de5.net
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "B - \U0001F1FA\U0001F1F8 US 04 TG: @nodpai"
+      port: 180
+      server: 82.198.246.37
+      type: vmess
+      uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    - client-fingerprint: random
+      name: "B - \U0001F1FA\U0001F1F8 US 05 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 103.76.85.150
+      servername: subtaler.trevely.de5.net
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f17d7eb4-ba07-463a-9ad8-3ec30f19dca2
+      ws-opts:
+        headers:
+            Host: subtaler.trevely.de5.net
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "B - \U0001F1FA\U0001F1F8 US 06 TG: @nodpai"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: OEZ3C-1OCSYBikqcWudtPP3PpQq2RAI7rFPxWoTCDSc
+        short-id: bffe9292
+      security: reality
+      server: 132.226.147.10
+      servername: musicstatus.tv.apple.com
+      skip-cert-verify: true
+      tls: true
+      type: vless
+      uuid: bba65652-b714-4832-ba62-cbf861ea2dbe
+    - name: "B - \U0001F1FA\U0001F1F8 US 07 TG: @nodpai"
+      network: ws
+      password: "1234567890"
+      port: 443
+      server: 152.53.228.86
+      sni: kfm-bn0.pages.dev
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: kfm-bn0.pages.dev
+        path: "/?ed=2560&https://t.me/WangCai2\U0001F1E8\U0001F1F3"
+    - name: "B - \U0001F1FA\U0001F1F8 US 08 TG: @nodpai"
+      network: ws
+      password: 8r<[9'l6hAO#8ZQi
+      port: 443
+      server: 139.59.239.116
+      skip-cert-verify: true
+      sni: Koma-YT.PAGeS.Dev
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: Koma-YT.PAGeS.Dev
+        path: "/trTelegram\U0001F1E8\U0001F1F3 @WangCai2"
+    - name: "B - \U0001F1FA\U0001F1F8 US 09 TG: @nodpai"
+      password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+      port: 443
+      server: vpn-us-018.fastervpn.world
+      skip-cert-verify: true
+      sni: vpn-us-018.fastervpn.world
+      type: hysteria2
+    - client-fingerprint: chrome
+      name: "C - \U0001F1FA\U0001F1F8 US 10 TG: @nodpai"
+      network: ws
+      password: 8r<[9'l6hAO#8ZQi
+      port: 443
+      server: 83.147.216.103
+      skip-cert-verify: true
+      sni: Koma-YT.PAGeS.Dev
+      tls: true
+      type: trojan
+      ws-opts:
+        headers:
+            Host: Koma-YT.PAGeS.Dev
+        path: "/trTelegram\U0001F1E8\U0001F1F3 @WangCai2"
+    - client-fingerprint: random
+      name: "C - \U0001F1FA\U0001F1F8 US 11 TG: @nodpai"
+      network: ws
+      port: 20024
+      server: 124.61.52.107
+      servername: subtaler.trevely.de5.net
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f17d7eb4-ba07-463a-9ad8-3ec30f19dca2
+      ws-opts:
+        headers:
+            Host: subtaler.trevely.de5.net
+        path: /?ed=2560
+    - alterId: 2
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 12 TG: @nodpai"
+      network: ws
+      port: 49362
+      server: us6.ifastcdncache.com
+      tls: false
+      type: vmess
+      uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+      ws-headers:
+        Host: harmonyoscloud.com
+      ws-opts:
+        headers:
+            Host: harmonyoscloud.com
+        path: /
+      ws-path: /
+    - client-fingerprint: random
+      name: "C - \U0001F1FA\U0001F1F8 US 13 TG: @nodpai"
+      network: ws
+      port: 38241
+      server: 222.117.231.32
+      servername: subtaler.trevely.de5.net
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f17d7eb4-ba07-463a-9ad8-3ec30f19dca2
+      ws-opts:
+        headers:
+            Host: subtaler.trevely.de5.net
+        path: /?ed=2560
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "C - \U0001F1FA\U0001F1F8 US 14 TG: @nodpai"
+      network: tcp
+      port: 443
+      reality-opts:
+        public-key: -ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk
+        short-id: c6118398
+      security: reality
+      server: 2.26.21.32.muslimtr.ru
+      servername: gateway.icloud.com
+      tls: true
+      type: vless
+      uuid: 322ffd77-9adc-4e10-8302-a8bcc14555a0
+    - cipher: chacha20-ietf-poly1305
+      name: "C - \U0001F1FA\U0001F1F8 US 15 TG: @nodpai"
+      password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+      plugin: obfs
+      plugin-opts:
+        host: 403880e.default.microsoft.lu:164892
+        mode: tls
+      port: 2377
+      server: 403880e.h4.gladns.com
+      skip-cert-verify: false
+      type: ss
+      udp: false
+    - client-fingerprint: chrome
+      encryption: none
+      flow: xtls-rprx-vision
+      name: "C - \U0001F1FA\U0001F1F8 US 16 TG: @nodpai"
+      network: tcp
+      port: 16196
+      reality-opts:
+        public-key: JZ-wjnzrf0Kr25tKSyDd8-iX4ciruu2bcdnEY8M7aT8
+        short-id: 6ba85179e30d4fc2
+      security: reality
+      server: 38.76.205.24
+      servername: www.mysql.com
+      tls: true
+      type: vless
+      uuid: 6810a725-9f09-4e44-89b1-0db4ad5003d1
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 17 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: 2a2645fe-34b6-4b0b-87bb-241cd17bb71f
+      ws-opts:
+        headers:
+            Host: 1a7b4b2d69cfc3485134b5ca9cc738f6.mobgslb.tbcache.com
+        path: /
+    - alterId: 2
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 18 TG: @nodpai"
+      port: 30829
+      server: v29.hdacd.com
+      type: vmess
+      uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 19 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: t.cnmjcn.cyou
+      type: vmess
+      udp: true
+      uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370
+      ws-headers:
+        Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+      ws-opts:
+        headers:
+            Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com
+        path: /
+      ws-path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 20 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 426069f8-bd51-4ca1-8be0-406e113e8d6d
+      ws-opts:
+        headers:
+            Host: 58d3f211c751f812d25139d33ea67d2d.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 21 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1408c28f-5c99-4e5c-8897-d675a40c45b8
+      ws-opts:
+        headers:
+            Host: 3bec5ff0f0da7d3ef35dbea327b8f105.mobgslb.tbcache.com
+        path: /
+    - client-fingerprint: random
+      name: "C - \U0001F1FA\U0001F1F8 US 22 TG: @nodpai"
+      network: ws
+      port: 443
+      server: 68.64.183.162
+      servername: subtaler.trevely.de5.net
+      skip-cert-verify: true
+      tfo: false
+      tls: true
+      type: vless
+      uuid: f17d7eb4-ba07-463a-9ad8-3ec30f19dca2
+      ws-opts:
+        headers:
+            Host: subtaler.trevely.de5.net
+        path: /?ed=2560
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 23 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 4c724177-302e-4fec-873c-8497faacd892
+      ws-opts:
+        headers:
+            Host: cc0300d614f3a627dad66423df3612b8.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 24 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: m.cnmjin.net
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "C - \U0001F1FA\U0001F1F8 US 25 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: t.cnmjcn.cyou
+      type: vmess
+      uuid: f05a041d-4fe6-4c1d-807b-1633f234f73d
+      ws-opts:
+        headers:
+            Host: 030cbf05827014581a6bf197a80dd9a0.mobgslb.tbcache.com
+        path: /
+    - alterId: 0
+      cipher: auto
+      name: "D - \U0001F1FA\U0001F1F8 US 26 TG: @nodpai"
+      network: ws
+      port: 16648
+      server: planb.mojcn.com
+      type: vmess
+      uuid: 1fe2c019-6bcf-4314-8b39-f1c5a63d1128
+      ws-opts:
+        headers:
+            Host: 4838ff902410750f9c8eb896b0dd5e2b.mobgslb.tbcache.com
+        path: /
+proxy-groups:
+    - name: Paily Connect
+      proxies:
+        - 自动选择
+        - 故障转移
+        - "B - \U0001F1ED\U0001F1F0 HK 01 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 02 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 03 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 04 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 05 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 06 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 07 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 08 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 09 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 10 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 11 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 12 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 13 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 14 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 15 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 16 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 17 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 18 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 19 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 20 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 21 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 22 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 23 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 24 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 25 TG: @nodpai"
+        - "D - \U0001F1ED\U0001F1F0 HK 26 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 01 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 02 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 03 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 04 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 05 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 06 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 07 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 08 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 09 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 10 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 11 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 12 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 13 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 14 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 15 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 16 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 17 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 18 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 19 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 20 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 21 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 22 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 23 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 24 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 25 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 26 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 01 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 02 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 03 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 04 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 05 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 06 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 07 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 08 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 09 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 10 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 11 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 12 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 13 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 14 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 15 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 16 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 17 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 18 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 19 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 20 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 21 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 22 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 23 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 24 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 25 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 26 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 01 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 02 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 03 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 04 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 05 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 06 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 07 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 08 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 09 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 10 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 11 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 12 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 13 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 14 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 15 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 16 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 17 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 18 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 19 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 20 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 21 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 22 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 23 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 24 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 25 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 26 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 01 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 02 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 03 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 04 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 05 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 06 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 07 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 08 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 09 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 10 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 11 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 12 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 13 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 14 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 15 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 16 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 17 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 18 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 19 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 20 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 21 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 22 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 23 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 24 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 25 TG: @nodpai"
+        - "D - \U0001F1FA\U0001F1F8 US 26 TG: @nodpai"
+      type: select
+    - interval: 86400
+      name: 自动选择
+      proxies:
+        - "B - \U0001F1ED\U0001F1F0 HK 01 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 02 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 03 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 04 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 05 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 06 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 07 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 08 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 09 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 10 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 11 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 12 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 13 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 14 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 15 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 16 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 17 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 18 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 19 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 20 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 21 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 22 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 23 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 24 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 25 TG: @nodpai"
+        - "D - \U0001F1ED\U0001F1F0 HK 26 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 01 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 02 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 03 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 04 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 05 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 06 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 07 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 08 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 09 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 10 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 11 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 12 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 13 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 14 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 15 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 16 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 17 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 18 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 19 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 20 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 21 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 22 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 23 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 24 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 25 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 26 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 01 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 02 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 03 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 04 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 05 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 06 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 07 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 08 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 09 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 10 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 11 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 12 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 13 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 14 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 15 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 16 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 17 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 18 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 19 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 20 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 21 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 22 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 23 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 24 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 25 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 26 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 01 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 02 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 03 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 04 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 05 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 06 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 07 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 08 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 09 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 10 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 11 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 12 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 13 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 14 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 15 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 16 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 17 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 18 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 19 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 20 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 21 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 22 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 23 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 24 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 25 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 26 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 01 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 02 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 03 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 04 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 05 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 06 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 07 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 08 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 09 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 10 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 11 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 12 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 13 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 14 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 15 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 16 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 17 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 18 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 19 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 20 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 21 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 22 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 23 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 24 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 25 TG: @nodpai"
+        - "D - \U0001F1FA\U0001F1F8 US 26 TG: @nodpai"
+      type: url-test
+      url: http://www.gstatic.com/generate_204
+    - interval: 7200
+      name: 故障转移
+      proxies:
+        - "B - \U0001F1ED\U0001F1F0 HK 01 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 02 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 03 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 04 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 05 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 06 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 07 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 08 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 09 TG: @nodpai"
+        - "B - \U0001F1ED\U0001F1F0 HK 10 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 11 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 12 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 13 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 14 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 15 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 16 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 17 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 18 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 19 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 20 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 21 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 22 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 23 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 24 TG: @nodpai"
+        - "C - \U0001F1ED\U0001F1F0 HK 25 TG: @nodpai"
+        - "D - \U0001F1ED\U0001F1F0 HK 26 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 01 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 02 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 03 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 04 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 05 TG: @nodpai"
+        - "B - \U0001F1F9\U0001F1FC TW 06 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 07 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 08 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 09 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 10 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 11 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 12 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 13 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 14 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 15 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 16 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 17 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 18 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 19 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 20 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 21 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 22 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 23 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 24 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 25 TG: @nodpai"
+        - "C - \U0001F1F9\U0001F1FC TW 26 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 01 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 02 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 03 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 04 TG: @nodpai"
+        - "A - \U0001F1EF\U0001F1F5 JP 05 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 06 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 07 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 08 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 09 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 10 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 11 TG: @nodpai"
+        - "B - \U0001F1EF\U0001F1F5 JP 12 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 13 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 14 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 15 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 16 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 17 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 18 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 19 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 20 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 21 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 22 TG: @nodpai"
+        - "C - \U0001F1EF\U0001F1F5 JP 23 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 24 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 25 TG: @nodpai"
+        - "D - \U0001F1EF\U0001F1F5 JP 26 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 01 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 02 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 03 TG: @nodpai"
+        - "A - \U0001F1F8\U0001F1EC SG 04 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 05 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 06 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 07 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 08 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 09 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 10 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 11 TG: @nodpai"
+        - "B - \U0001F1F8\U0001F1EC SG 12 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 13 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 14 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 15 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 16 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 17 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 18 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 19 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 20 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 21 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 22 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 23 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 24 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 25 TG: @nodpai"
+        - "C - \U0001F1F8\U0001F1EC SG 26 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 01 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 02 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 03 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 04 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 05 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 06 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 07 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 08 TG: @nodpai"
+        - "B - \U0001F1FA\U0001F1F8 US 09 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 10 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 11 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 12 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 13 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 14 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 15 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 16 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 17 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 18 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 19 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 20 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 21 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 22 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 23 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 24 TG: @nodpai"
+        - "C - \U0001F1FA\U0001F1F8 US 25 TG: @nodpai"
+        - "D - \U0001F1FA\U0001F1F8 US 26 TG: @nodpai"
+      type: fallback
+      url: http://www.gstatic.com/generate_204
+rules:
+    - IP-CIDR,1.1.1.1/32,Paily Connect,no-resolve
+    - IP-CIDR,8.8.8.8/32,Paily Connect,no-resolve
+    - DOMAIN-SUFFIX,services.googleapis.cn,Paily Connect
+    - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,Paily Connect
+    - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+    - DOMAIN,safebrowsing.googleapis.com,DIRECT
+    - DOMAIN,developer.apple.com,Paily Connect
+    - DOMAIN-SUFFIX,digicert.com,Paily Connect
+    - DOMAIN,ocsp.apple.com,Paily Connect
+    - DOMAIN,ocsp.comodoca.com,Paily Connect
+    - DOMAIN,ocsp.usertrust.com,Paily Connect
+    - DOMAIN,ocsp.sectigo.com,Paily Connect
+    - DOMAIN,ocsp.verisign.net,Paily Connect
+    - DOMAIN-SUFFIX,apple-dns.net,Paily Connect
+    - DOMAIN,testflight.apple.com,Paily Connect
+    - DOMAIN,sandbox.itunes.apple.com,Paily Connect
+    - DOMAIN,itunes.apple.com,Paily Connect
+    - DOMAIN-SUFFIX,apps.apple.com,Paily Connect
+    - DOMAIN-SUFFIX,blobstore.apple.com,Paily Connect
+    - DOMAIN,cvws.icloud-content.com,Paily Connect
+    - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+    - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+    - DOMAIN-SUFFIX,icloud.com,DIRECT
+    - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+    - DOMAIN-SUFFIX,me.com,DIRECT
+    - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+    - DOMAIN-SUFFIX,cdn20.com,DIRECT
+    - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+    - DOMAIN-SUFFIX,akadns.net,DIRECT
+    - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+    - DOMAIN-SUFFIX,edgekey.net,DIRECT
+    - DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+    - DOMAIN-SUFFIX,mwcname.com,DIRECT
+    - DOMAIN-SUFFIX,apple.com,DIRECT
+    - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+    - DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+    - DOMAIN,cn.bing.com,DIRECT
+    - DOMAIN-SUFFIX,126.com,DIRECT
+    - DOMAIN-SUFFIX,126.net,DIRECT
+    - DOMAIN-SUFFIX,127.net,DIRECT
+    - DOMAIN-SUFFIX,163.com,DIRECT
+    - DOMAIN-SUFFIX,360buyimg.com,DIRECT
+    - DOMAIN-SUFFIX,36kr.com,DIRECT
+    - DOMAIN-SUFFIX,acfun.tv,DIRECT
+    - DOMAIN-SUFFIX,air-matters.com,DIRECT
+    - DOMAIN-SUFFIX,aixifan.com,DIRECT
+    - DOMAIN-KEYWORD,alicdn,DIRECT
+    - DOMAIN-KEYWORD,alipay,DIRECT
+    - DOMAIN-KEYWORD,taobao,DIRECT
+    - DOMAIN-SUFFIX,amap.com,DIRECT
+    - DOMAIN-SUFFIX,autonavi.com,DIRECT
+    - DOMAIN-KEYWORD,baidu,DIRECT
+    - DOMAIN-SUFFIX,bdimg.com,DIRECT
+    - DOMAIN-SUFFIX,bdstatic.com,DIRECT
+    - DOMAIN-SUFFIX,bilibili.com,DIRECT
+    - DOMAIN-SUFFIX,bilivideo.com,DIRECT
+    - DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+    - DOMAIN-SUFFIX,clouddn.com,DIRECT
+    - DOMAIN-SUFFIX,cnbeta.com,DIRECT
+    - DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+    - DOMAIN-SUFFIX,cootekservice.com,DIRECT
+    - DOMAIN-SUFFIX,csdn.net,DIRECT
+    - DOMAIN-SUFFIX,ctrip.com,DIRECT
+    - DOMAIN-SUFFIX,dgtle.com,DIRECT
+    - DOMAIN-SUFFIX,dianping.com,DIRECT
+    - DOMAIN-SUFFIX,douban.com,DIRECT
+    - DOMAIN-SUFFIX,doubanio.com,DIRECT
+    - DOMAIN-SUFFIX,duokan.com,DIRECT
+    - DOMAIN-SUFFIX,easou.com,DIRECT
+    - DOMAIN-SUFFIX,ele.me,DIRECT
+    - DOMAIN-SUFFIX,feng.com,DIRECT
+    - DOMAIN-SUFFIX,fir.im,DIRECT
+    - DOMAIN-SUFFIX,frdic.com,DIRECT
+    - DOMAIN-SUFFIX,g-cores.com,DIRECT
+    - DOMAIN-SUFFIX,godic.net,DIRECT
+    - DOMAIN-SUFFIX,gtimg.com,DIRECT
+    - DOMAIN,cdn.hockeyapp.net,DIRECT
+    - DOMAIN-SUFFIX,hongxiu.com,DIRECT
+    - DOMAIN-SUFFIX,hxcdn.net,DIRECT
+    - DOMAIN-SUFFIX,iciba.com,DIRECT
+    - DOMAIN-SUFFIX,ifeng.com,DIRECT
+    - DOMAIN-SUFFIX,ifengimg.com,DIRECT
+    - DOMAIN-SUFFIX,ipip.net,DIRECT
+    - DOMAIN-SUFFIX,iqiyi.com,DIRECT
+    - DOMAIN-SUFFIX,jd.com,DIRECT
+    - DOMAIN-SUFFIX,jianshu.com,DIRECT
+    - DOMAIN-SUFFIX,knewone.com,DIRECT
+    - DOMAIN-SUFFIX,le.com,DIRECT
+    - DOMAIN-SUFFIX,lecloud.com,DIRECT
+    - DOMAIN-SUFFIX,lemicp.com,DIRECT
+    - DOMAIN-SUFFIX,licdn.com,DIRECT
+    - DOMAIN-SUFFIX,luoo.net,DIRECT
+    - DOMAIN-SUFFIX,meituan.com,DIRECT
+    - DOMAIN-SUFFIX,meituan.net,DIRECT
+    - DOMAIN-SUFFIX,mi.com,DIRECT
+    - DOMAIN-SUFFIX,miaopai.com,DIRECT
+    - DOMAIN-SUFFIX,microsoft.com,DIRECT
+    - DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+    - DOMAIN-SUFFIX,miui.com,DIRECT
+    - DOMAIN-SUFFIX,miwifi.com,DIRECT
+    - DOMAIN-SUFFIX,mob.com,DIRECT
+    - DOMAIN-SUFFIX,netease.com,DIRECT
+    - DOMAIN-SUFFIX,office.com,DIRECT
+    - DOMAIN-SUFFIX,office365.com,DIRECT
+    - DOMAIN-KEYWORD,officecdn,DIRECT
+    - DOMAIN-SUFFIX,oschina.net,DIRECT
+    - DOMAIN-SUFFIX,ppsimg.com,DIRECT
+    - DOMAIN-SUFFIX,pstatp.com,DIRECT
+    - DOMAIN-SUFFIX,qcloud.com,DIRECT
+    - DOMAIN-SUFFIX,qdaily.com,DIRECT
+    - DOMAIN-SUFFIX,qdmm.com,DIRECT
+    - DOMAIN-SUFFIX,qhimg.com,DIRECT
+    - DOMAIN-SUFFIX,qhres.com,DIRECT
+    - DOMAIN-SUFFIX,qidian.com,DIRECT
+    - DOMAIN-SUFFIX,qihucdn.com,DIRECT
+    - DOMAIN-SUFFIX,qiniu.com,DIRECT
+    - DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+    - DOMAIN-SUFFIX,qiyipic.com,DIRECT
+    - DOMAIN-SUFFIX,qq.com,DIRECT
+    - DOMAIN-SUFFIX,qqurl.com,DIRECT
+    - DOMAIN-SUFFIX,rarbg.to,DIRECT
+    - DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+    - DOMAIN-SUFFIX,segmentfault.com,DIRECT
+    - DOMAIN-SUFFIX,sinaapp.com,DIRECT
+    - DOMAIN-SUFFIX,smzdm.com,DIRECT
+    - DOMAIN-SUFFIX,snapdrop.net,DIRECT
+    - DOMAIN-SUFFIX,sogou.com,DIRECT
+    - DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+    - DOMAIN-SUFFIX,sohu.com,DIRECT
+    - DOMAIN-SUFFIX,soku.com,DIRECT
+    - DOMAIN-SUFFIX,speedtest.net,DIRECT
+    - DOMAIN-SUFFIX,sspai.com,DIRECT
+    - DOMAIN-SUFFIX,suning.com,DIRECT
+    - DOMAIN-SUFFIX,taobao.com,DIRECT
+    - DOMAIN-SUFFIX,tencent.com,DIRECT
+    - DOMAIN-SUFFIX,tenpay.com,DIRECT
+    - DOMAIN-SUFFIX,tianyancha.com,DIRECT
+    - DOMAIN-SUFFIX,tmall.com,DIRECT
+    - DOMAIN-SUFFIX,tudou.com,DIRECT
+    - DOMAIN-SUFFIX,umetrip.com,DIRECT
+    - DOMAIN-SUFFIX,upaiyun.com,DIRECT
+    - DOMAIN-SUFFIX,upyun.com,DIRECT
+    - DOMAIN-SUFFIX,veryzhun.com,DIRECT
+    - DOMAIN-SUFFIX,weather.com,DIRECT
+    - DOMAIN-SUFFIX,weibo.com,DIRECT
+    - DOMAIN-SUFFIX,xiami.com,DIRECT
+    - DOMAIN-SUFFIX,xiami.net,DIRECT
+    - DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+    - DOMAIN-SUFFIX,ximalaya.com,DIRECT
+    - DOMAIN-SUFFIX,xmcdn.com,DIRECT
+    - DOMAIN-SUFFIX,xunlei.com,DIRECT
+    - DOMAIN-SUFFIX,yhd.com,DIRECT
+    - DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+    - DOMAIN-SUFFIX,yinxiang.com,DIRECT
+    - DOMAIN-SUFFIX,ykimg.com,DIRECT
+    - DOMAIN-SUFFIX,youdao.com,DIRECT
+    - DOMAIN-SUFFIX,youku.com,DIRECT
+    - DOMAIN-SUFFIX,zealer.com,DIRECT
+    - DOMAIN-SUFFIX,zhihu.com,DIRECT
+    - DOMAIN-SUFFIX,zhimg.com,DIRECT
+    - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+    - DOMAIN-SUFFIX,zoho.com,DIRECT
+    - DOMAIN-KEYWORD,amazon,Paily Connect
+    - DOMAIN-KEYWORD,google,Paily Connect
+    - DOMAIN-KEYWORD,gmail,Paily Connect
+    - DOMAIN-KEYWORD,youtube,Paily Connect
+    - DOMAIN-KEYWORD,facebook,Paily Connect
+    - DOMAIN-SUFFIX,fb.me,Paily Connect
+    - DOMAIN-SUFFIX,fbcdn.net,Paily Connect
+    - DOMAIN-KEYWORD,twitter,Paily Connect
+    - DOMAIN-KEYWORD,instagram,Paily Connect
+    - DOMAIN-KEYWORD,dropbox,Paily Connect
+    - DOMAIN-SUFFIX,twimg.com,Paily Connect
+    - DOMAIN-KEYWORD,blogspot,Paily Connect
+    - DOMAIN-SUFFIX,youtu.be,Paily Connect
+    - DOMAIN-KEYWORD,whatsapp,Paily Connect
+    - DOMAIN-KEYWORD,admarvel,REJECT
+    - DOMAIN-KEYWORD,admaster,REJECT
+    - DOMAIN-KEYWORD,adsage,REJECT
+    - DOMAIN-KEYWORD,adsmogo,REJECT
+    - DOMAIN-KEYWORD,adsrvmedia,REJECT
+    - DOMAIN-KEYWORD,adwords,REJECT
+    - DOMAIN-KEYWORD,adservice,REJECT
+    - DOMAIN-SUFFIX,appsflyer.com,REJECT
+    - DOMAIN-KEYWORD,domob,REJECT
+    - DOMAIN-SUFFIX,doubleclick.net,REJECT
+    - DOMAIN-KEYWORD,duomeng,REJECT
+    - DOMAIN-KEYWORD,dwtrack,REJECT
+    - DOMAIN-KEYWORD,guanggao,REJECT
+    - DOMAIN-KEYWORD,lianmeng,REJECT
+    - DOMAIN-SUFFIX,mmstat.com,REJECT
+    - DOMAIN-KEYWORD,mopub,REJECT
+    - DOMAIN-KEYWORD,omgmta,REJECT
+    - DOMAIN-KEYWORD,openx,REJECT
+    - DOMAIN-KEYWORD,partnerad,REJECT
+    - DOMAIN-KEYWORD,pingfore,REJECT
+    - DOMAIN-KEYWORD,supersonicads,REJECT
+    - DOMAIN-KEYWORD,uedas,REJECT
+    - DOMAIN-KEYWORD,umeng,REJECT
+    - DOMAIN-KEYWORD,usage,REJECT
+    - DOMAIN-SUFFIX,vungle.com,REJECT
+    - DOMAIN-KEYWORD,wlmonitor,REJECT
+    - DOMAIN-KEYWORD,zjtoolbar,REJECT
+    - DOMAIN-SUFFIX,9to5mac.com,Paily Connect
+    - DOMAIN-SUFFIX,abpchina.org,Paily Connect
+    - DOMAIN-SUFFIX,adblockplus.org,Paily Connect
+    - DOMAIN-SUFFIX,adobe.com,Paily Connect
+    - DOMAIN-SUFFIX,akamaized.net,Paily Connect
+    - DOMAIN-SUFFIX,alfredapp.com,Paily Connect
+    - DOMAIN-SUFFIX,amplitude.com,Paily Connect
+    - DOMAIN-SUFFIX,ampproject.org,Paily Connect
+    - DOMAIN-SUFFIX,android.com,Paily Connect
+    - DOMAIN-SUFFIX,angularjs.org,Paily Connect
+    - DOMAIN-SUFFIX,aolcdn.com,Paily Connect
+    - DOMAIN-SUFFIX,apkpure.com,Paily Connect
+    - DOMAIN-SUFFIX,appledaily.com,Paily Connect
+    - DOMAIN-SUFFIX,appshopper.com,Paily Connect
+    - DOMAIN-SUFFIX,appspot.com,Paily Connect
+    - DOMAIN-SUFFIX,arcgis.com,Paily Connect
+    - DOMAIN-SUFFIX,archive.org,Paily Connect
+    - DOMAIN-SUFFIX,armorgames.com,Paily Connect
+    - DOMAIN-SUFFIX,aspnetcdn.com,Paily Connect
+    - DOMAIN-SUFFIX,att.com,Paily Connect
+    - DOMAIN-SUFFIX,awsstatic.com,Paily Connect
+    - DOMAIN-SUFFIX,azureedge.net,Paily Connect
+    - DOMAIN-SUFFIX,azurewebsites.net,Paily Connect
+    - DOMAIN-SUFFIX,bing.com,Paily Connect
+    - DOMAIN-SUFFIX,bintray.com,Paily Connect
+    - DOMAIN-SUFFIX,bit.com,Paily Connect
+    - DOMAIN-SUFFIX,bit.ly,Paily Connect
+    - DOMAIN-SUFFIX,bitbucket.org,Paily Connect
+    - DOMAIN-SUFFIX,bjango.com,Paily Connect
+    - DOMAIN-SUFFIX,bkrtx.com,Paily Connect
+    - DOMAIN-SUFFIX,blog.com,Paily Connect
+    - DOMAIN-SUFFIX,blogcdn.com,Paily Connect
+    - DOMAIN-SUFFIX,blogger.com,Paily Connect
+    - DOMAIN-SUFFIX,blogsmithmedia.com,Paily Connect
+    - DOMAIN-SUFFIX,blogspot.com,Paily Connect
+    - DOMAIN-SUFFIX,blogspot.hk,Paily Connect
+    - DOMAIN-SUFFIX,bloomberg.com,Paily Connect
+    - DOMAIN-SUFFIX,box.com,Paily Connect
+    - DOMAIN-SUFFIX,box.net,Paily Connect
+    - DOMAIN-SUFFIX,cachefly.net,Paily Connect
+    - DOMAIN-SUFFIX,chromium.org,Paily Connect
+    - DOMAIN-SUFFIX,cl.ly,Paily Connect
+    - DOMAIN-SUFFIX,cloudflare.com,Paily Connect
+    - DOMAIN-SUFFIX,cloudfront.net,Paily Connect
+    - DOMAIN-SUFFIX,cloudmagic.com,Paily Connect
+    - DOMAIN-SUFFIX,cmail19.com,Paily Connect
+    - DOMAIN-SUFFIX,cnet.com,Paily Connect
+    - DOMAIN-SUFFIX,cocoapods.org,Paily Connect
+    - DOMAIN-SUFFIX,comodoca.com,Paily Connect
+    - DOMAIN-SUFFIX,crashlytics.com,Paily Connect
+    - DOMAIN-SUFFIX,culturedcode.com,Paily Connect
+    - DOMAIN-SUFFIX,d.pr,Paily Connect
+    - DOMAIN-SUFFIX,danilo.to,Paily Connect
+    - DOMAIN-SUFFIX,dayone.me,Paily Connect
+    - DOMAIN-SUFFIX,db.tt,Paily Connect
+    - DOMAIN-SUFFIX,deskconnect.com,Paily Connect
+    - DOMAIN-SUFFIX,disq.us,Paily Connect
+    - DOMAIN-SUFFIX,disqus.com,Paily Connect
+    - DOMAIN-SUFFIX,disquscdn.com,Paily Connect
+    - DOMAIN-SUFFIX,dnsimple.com,Paily Connect
+    - DOMAIN-SUFFIX,docker.com,Paily Connect
+    - DOMAIN-SUFFIX,dribbble.com,Paily Connect
+    - DOMAIN-SUFFIX,droplr.com,Paily Connect
+    - DOMAIN-SUFFIX,duckduckgo.com,Paily Connect
+    - DOMAIN-SUFFIX,dueapp.com,Paily Connect
+    - DOMAIN-SUFFIX,dytt8.net,Paily Connect
+    - DOMAIN-SUFFIX,edgecastcdn.net,Paily Connect
+    - DOMAIN-SUFFIX,edgekey.net,Paily Connect
+    - DOMAIN-SUFFIX,edgesuite.net,Paily Connect
+    - DOMAIN-SUFFIX,engadget.com,Paily Connect
+    - DOMAIN-SUFFIX,entrust.net,Paily Connect
+    - DOMAIN-SUFFIX,eurekavpt.com,Paily Connect
+    - DOMAIN-SUFFIX,evernote.com,Paily Connect
+    - DOMAIN-SUFFIX,fabric.io,Paily Connect
+    - DOMAIN-SUFFIX,fast.com,Paily Connect
+    - DOMAIN-SUFFIX,fastly.net,Paily Connect
+    - DOMAIN-SUFFIX,fc2.com,Paily Connect
+    - DOMAIN-SUFFIX,feedburner.com,Paily Connect
+    - DOMAIN-SUFFIX,feedly.com,Paily Connect
+    - DOMAIN-SUFFIX,feedsportal.com,Paily Connect
+    - DOMAIN-SUFFIX,fiftythree.com,Paily Connect
+    - DOMAIN-SUFFIX,firebaseio.com,Paily Connect
+    - DOMAIN-SUFFIX,flexibits.com,Paily Connect
+    - DOMAIN-SUFFIX,flickr.com,Paily Connect
+    - DOMAIN-SUFFIX,flipboard.com,Paily Connect
+    - DOMAIN-SUFFIX,g.co,Paily Connect
+    - DOMAIN-SUFFIX,gabia.net,Paily Connect
+    - DOMAIN-SUFFIX,geni.us,Paily Connect
+    - DOMAIN-SUFFIX,gfx.ms,Paily Connect
+    - DOMAIN-SUFFIX,ggpht.com,Paily Connect
+    - DOMAIN-SUFFIX,ghostnoteapp.com,Paily Connect
+    - DOMAIN-SUFFIX,git.io,Paily Connect
+    - DOMAIN-KEYWORD,github,Paily Connect
+    - DOMAIN-SUFFIX,globalsign.com,Paily Connect
+    - DOMAIN-SUFFIX,gmodules.com,Paily Connect
+    - DOMAIN-SUFFIX,godaddy.com,Paily Connect
+    - DOMAIN-SUFFIX,golang.org,Paily Connect
+    - DOMAIN-SUFFIX,gongm.in,Paily Connect
+    - DOMAIN-SUFFIX,goo.gl,Paily Connect
+    - DOMAIN-SUFFIX,goodreaders.com,Paily Connect
+    - DOMAIN-SUFFIX,goodreads.com,Paily Connect
+    - DOMAIN-SUFFIX,gravatar.com,Paily Connect
+    - DOMAIN-SUFFIX,gstatic.com,Paily Connect
+    - DOMAIN-SUFFIX,gvt0.com,Paily Connect
+    - DOMAIN-SUFFIX,hockeyapp.net,Paily Connect
+    - DOMAIN-SUFFIX,hotmail.com,Paily Connect
+    - DOMAIN-SUFFIX,icons8.com,Paily Connect
+    - DOMAIN-SUFFIX,ifixit.com,Paily Connect
+    - DOMAIN-SUFFIX,ift.tt,Paily Connect
+    - DOMAIN-SUFFIX,ifttt.com,Paily Connect
+    - DOMAIN-SUFFIX,iherb.com,Paily Connect
+    - DOMAIN-SUFFIX,imageshack.us,Paily Connect
+    - DOMAIN-SUFFIX,img.ly,Paily Connect
+    - DOMAIN-SUFFIX,imgur.com,Paily Connect
+    - DOMAIN-SUFFIX,imore.com,Paily Connect
+    - DOMAIN-SUFFIX,instapaper.com,Paily Connect
+    - DOMAIN-SUFFIX,ipn.li,Paily Connect
+    - DOMAIN-SUFFIX,is.gd,Paily Connect
+    - DOMAIN-SUFFIX,issuu.com,Paily Connect
+    - DOMAIN-SUFFIX,itgonglun.com,Paily Connect
+    - DOMAIN-SUFFIX,itun.es,Paily Connect
+    - DOMAIN-SUFFIX,ixquick.com,Paily Connect
+    - DOMAIN-SUFFIX,j.mp,Paily Connect
+    - DOMAIN-SUFFIX,js.revsci.net,Paily Connect
+    - DOMAIN-SUFFIX,jshint.com,Paily Connect
+    - DOMAIN-SUFFIX,jtvnw.net,Paily Connect
+    - DOMAIN-SUFFIX,justgetflux.com,Paily Connect
+    - DOMAIN-SUFFIX,kat.cr,Paily Connect
+    - DOMAIN-SUFFIX,klip.me,Paily Connect
+    - DOMAIN-SUFFIX,libsyn.com,Paily Connect
+    - DOMAIN-SUFFIX,linkedin.com,Paily Connect
+    - DOMAIN-SUFFIX,line-apps.com,Paily Connect
+    - DOMAIN-SUFFIX,linode.com,Paily Connect
+    - DOMAIN-SUFFIX,lithium.com,Paily Connect
+    - DOMAIN-SUFFIX,littlehj.com,Paily Connect
+    - DOMAIN-SUFFIX,live.com,Paily Connect
+    - DOMAIN-SUFFIX,live.net,Paily Connect
+    - DOMAIN-SUFFIX,livefilestore.com,Paily Connect
+    - DOMAIN-SUFFIX,llnwd.net,Paily Connect
+    - DOMAIN-SUFFIX,macid.co,Paily Connect
+    - DOMAIN-SUFFIX,macromedia.com,Paily Connect
+    - DOMAIN-SUFFIX,macrumors.com,Paily Connect
+    - DOMAIN-SUFFIX,mashable.com,Paily Connect
+    - DOMAIN-SUFFIX,mathjax.org,Paily Connect
+    - DOMAIN-SUFFIX,medium.com,Paily Connect
+    - DOMAIN-SUFFIX,mega.co.nz,Paily Connect
+    - DOMAIN-SUFFIX,mega.nz,Paily Connect
+    - DOMAIN-SUFFIX,megaupload.com,Paily Connect
+    - DOMAIN-SUFFIX,microsofttranslator.com,Paily Connect
+    - DOMAIN-SUFFIX,mindnode.com,Paily Connect
+    - DOMAIN-SUFFIX,mobile01.com,Paily Connect
+    - DOMAIN-SUFFIX,modmyi.com,Paily Connect
+    - DOMAIN-SUFFIX,msedge.net,Paily Connect
+    - DOMAIN-SUFFIX,myfontastic.com,Paily Connect
+    - DOMAIN-SUFFIX,name.com,Paily Connect
+    - DOMAIN-SUFFIX,nextmedia.com,Paily Connect
+    - DOMAIN-SUFFIX,nsstatic.net,Paily Connect
+    - DOMAIN-SUFFIX,nssurge.com,Paily Connect
+    - DOMAIN-SUFFIX,nyt.com,Paily Connect
+    - DOMAIN-SUFFIX,nytimes.com,Paily Connect
+    - DOMAIN-SUFFIX,omnigroup.com,Paily Connect
+    - DOMAIN-SUFFIX,onedrive.com,Paily Connect
+    - DOMAIN-SUFFIX,onenote.com,Paily Connect
+    - DOMAIN-SUFFIX,ooyala.com,Paily Connect
+    - DOMAIN-SUFFIX,openvpn.net,Paily Connect
+    - DOMAIN-SUFFIX,openwrt.org,Paily Connect
+    - DOMAIN-SUFFIX,orkut.com,Paily Connect
+    - DOMAIN-SUFFIX,osxdaily.com,Paily Connect
+    - DOMAIN-SUFFIX,outlook.com,Paily Connect
+    - DOMAIN-SUFFIX,ow.ly,Paily Connect
+    - DOMAIN-SUFFIX,paddleapi.com,Paily Connect
+    - DOMAIN-SUFFIX,parallels.com,Paily Connect
+    - DOMAIN-SUFFIX,parse.com,Paily Connect
+    - DOMAIN-SUFFIX,pdfexpert.com,Paily Connect
+    - DOMAIN-SUFFIX,periscope.tv,Paily Connect
+    - DOMAIN-SUFFIX,pinboard.in,Paily Connect
+    - DOMAIN-SUFFIX,pinterest.com,Paily Connect
+    - DOMAIN-SUFFIX,pixelmator.com,Paily Connect
+    - DOMAIN-SUFFIX,pixiv.net,Paily Connect
+    - DOMAIN-SUFFIX,playpcesor.com,Paily Connect
+    - DOMAIN-SUFFIX,playstation.com,Paily Connect
+    - DOMAIN-SUFFIX,playstation.com.hk,Paily Connect
+    - DOMAIN-SUFFIX,playstation.net,Paily Connect
+    - DOMAIN-SUFFIX,playstationnetwork.com,Paily Connect
+    - DOMAIN-SUFFIX,pushwoosh.com,Paily Connect
+    - DOMAIN-SUFFIX,rime.im,Paily Connect
+    - DOMAIN-SUFFIX,servebom.com,Paily Connect
+    - DOMAIN-SUFFIX,sfx.ms,Paily Connect
+    - DOMAIN-SUFFIX,shadowsocks.org,Paily Connect
+    - DOMAIN-SUFFIX,sharethis.com,Paily Connect
+    - DOMAIN-SUFFIX,shazam.com,Paily Connect
+    - DOMAIN-SUFFIX,skype.com,Paily Connect
+    - DOMAIN-SUFFIX,smartdnsPaily Connect.com,Paily Connect
+    - DOMAIN-SUFFIX,smartmailcloud.com,Paily Connect
+    - DOMAIN-SUFFIX,sndcdn.com,Paily Connect
+    - DOMAIN-SUFFIX,sony.com,Paily Connect
+    - DOMAIN-SUFFIX,soundcloud.com,Paily Connect
+    - DOMAIN-SUFFIX,sourceforge.net,Paily Connect
+    - DOMAIN-SUFFIX,spotify.com,Paily Connect
+    - DOMAIN-SUFFIX,squarespace.com,Paily Connect
+    - DOMAIN-SUFFIX,sstatic.net,Paily Connect
+    - DOMAIN-SUFFIX,st.luluku.pw,Paily Connect
+    - DOMAIN-SUFFIX,stackoverflow.com,Paily Connect
+    - DOMAIN-SUFFIX,startpage.com,Paily Connect
+    - DOMAIN-SUFFIX,staticflickr.com,Paily Connect
+    - DOMAIN-SUFFIX,steamcommunity.com,Paily Connect
+    - DOMAIN-SUFFIX,symauth.com,Paily Connect
+    - DOMAIN-SUFFIX,symcb.com,Paily Connect
+    - DOMAIN-SUFFIX,symcd.com,Paily Connect
+    - DOMAIN-SUFFIX,tapbots.com,Paily Connect
+    - DOMAIN-SUFFIX,tapbots.net,Paily Connect
+    - DOMAIN-SUFFIX,tdesktop.com,Paily Connect
+    - DOMAIN-SUFFIX,techcrunch.com,Paily Connect
+    - DOMAIN-SUFFIX,techsmith.com,Paily Connect
+    - DOMAIN-SUFFIX,thepiratebay.org,Paily Connect
+    - DOMAIN-SUFFIX,theverge.com,Paily Connect
+    - DOMAIN-SUFFIX,time.com,Paily Connect
+    - DOMAIN-SUFFIX,timeinc.net,Paily Connect
+    - DOMAIN-SUFFIX,tiny.cc,Paily Connect
+    - DOMAIN-SUFFIX,tinypic.com,Paily Connect
+    - DOMAIN-SUFFIX,tmblr.co,Paily Connect
+    - DOMAIN-SUFFIX,todoist.com,Paily Connect
+    - DOMAIN-SUFFIX,trello.com,Paily Connect
+    - DOMAIN-SUFFIX,trustasiassl.com,Paily Connect
+    - DOMAIN-SUFFIX,tumblr.co,Paily Connect
+    - DOMAIN-SUFFIX,tumblr.com,Paily Connect
+    - DOMAIN-SUFFIX,tweetdeck.com,Paily Connect
+    - DOMAIN-SUFFIX,tweetmarker.net,Paily Connect
+    - DOMAIN-SUFFIX,twitch.tv,Paily Connect
+    - DOMAIN-SUFFIX,txmblr.com,Paily Connect
+    - DOMAIN-SUFFIX,typekit.net,Paily Connect
+    - DOMAIN-SUFFIX,ubertags.com,Paily Connect
+    - DOMAIN-SUFFIX,ublock.org,Paily Connect
+    - DOMAIN-SUFFIX,ubnt.com,Paily Connect
+    - DOMAIN-SUFFIX,ulyssesapp.com,Paily Connect
+    - DOMAIN-SUFFIX,urchin.com,Paily Connect
+    - DOMAIN-SUFFIX,usertrust.com,Paily Connect
+    - DOMAIN-SUFFIX,v.gd,Paily Connect
+    - DOMAIN-SUFFIX,v2ex.com,Paily Connect
+    - DOMAIN-SUFFIX,vimeo.com,Paily Connect
+    - DOMAIN-SUFFIX,vimeocdn.com,Paily Connect
+    - DOMAIN-SUFFIX,vine.co,Paily Connect
+    - DOMAIN-SUFFIX,vivaldi.com,Paily Connect
+    - DOMAIN-SUFFIX,vox-cdn.com,Paily Connect
+    - DOMAIN-SUFFIX,vsco.co,Paily Connect
+    - DOMAIN-SUFFIX,vultr.com,Paily Connect
+    - DOMAIN-SUFFIX,w.org,Paily Connect
+    - DOMAIN-SUFFIX,w3schools.com,Paily Connect
+    - DOMAIN-SUFFIX,webtype.com,Paily Connect
+    - DOMAIN-SUFFIX,wikiwand.com,Paily Connect
+    - DOMAIN-SUFFIX,wikileaks.org,Paily Connect
+    - DOMAIN-SUFFIX,wikimedia.org,Paily Connect
+    - DOMAIN-SUFFIX,wikipedia.com,Paily Connect
+    - DOMAIN-SUFFIX,wikipedia.org,Paily Connect
+    - DOMAIN-SUFFIX,windows.com,Paily Connect
+    - DOMAIN-SUFFIX,windows.net,Paily Connect
+    - DOMAIN-SUFFIX,wire.com,Paily Connect
+    - DOMAIN-SUFFIX,wordpress.com,Paily Connect
+    - DOMAIN-SUFFIX,workflowy.com,Paily Connect
+    - DOMAIN-SUFFIX,wp.com,Paily Connect
+    - DOMAIN-SUFFIX,wsj.com,Paily Connect
+    - DOMAIN-SUFFIX,wsj.net,Paily Connect
+    - DOMAIN-SUFFIX,xda-developers.com,Paily Connect
+    - DOMAIN-SUFFIX,xeeno.com,Paily Connect
+    - DOMAIN-SUFFIX,xiti.com,Paily Connect
+    - DOMAIN-SUFFIX,yahoo.com,Paily Connect
+    - DOMAIN-SUFFIX,yimg.com,Paily Connect
+    - DOMAIN-SUFFIX,ying.com,Paily Connect
+    - DOMAIN-SUFFIX,yoyo.org,Paily Connect
+    - DOMAIN-SUFFIX,ytimg.com,Paily Connect
+    - DOMAIN-SUFFIX,telegra.ph,Paily Connect
+    - DOMAIN-SUFFIX,telegram.org,Paily Connect
+    - IP-CIDR,91.108.4.0/22,Paily Connect,no-resolve
+    - IP-CIDR,91.108.8.0/21,Paily Connect,no-resolve
+    - IP-CIDR,91.108.16.0/22,Paily Connect,no-resolve
+    - IP-CIDR,91.108.56.0/22,Paily Connect,no-resolve
+    - IP-CIDR,149.154.160.0/20,Paily Connect,no-resolve
+    - IP-CIDR6,2001:67c:4e8::/48,Paily Connect,no-resolve
+    - IP-CIDR6,2001:b28:f23d::/48,Paily Connect,no-resolve
+    - IP-CIDR6,2001:b28:f23f::/48,Paily Connect,no-resolve
+    - IP-CIDR,120.232.181.162/32,Paily Connect,no-resolve
+    - IP-CIDR,120.241.147.226/32,Paily Connect,no-resolve
+    - IP-CIDR,120.253.253.226/32,Paily Connect,no-resolve
+    - IP-CIDR,120.253.255.162/32,Paily Connect,no-resolve
+    - IP-CIDR,120.253.255.34/32,Paily Connect,no-resolve
+    - IP-CIDR,120.253.255.98/32,Paily Connect,no-resolve
+    - IP-CIDR,180.163.150.162/32,Paily Connect,no-resolve
+    - IP-CIDR,180.163.150.34/32,Paily Connect,no-resolve
+    - IP-CIDR,180.163.151.162/32,Paily Connect,no-resolve
+    - IP-CIDR,180.163.151.34/32,Paily Connect,no-resolve
+    - IP-CIDR,203.208.39.0/24,Paily Connect,no-resolve
+    - IP-CIDR,203.208.40.0/24,Paily Connect,no-resolve
+    - IP-CIDR,203.208.41.0/24,Paily Connect,no-resolve
+    - IP-CIDR,203.208.43.0/24,Paily Connect,no-resolve
+    - IP-CIDR,203.208.50.0/24,Paily Connect,no-resolve
+    - IP-CIDR,220.181.174.162/32,Paily Connect,no-resolve
+    - IP-CIDR,220.181.174.226/32,Paily Connect,no-resolve
+    - IP-CIDR,220.181.174.34/32,Paily Connect,no-resolve
+    - DOMAIN,injections.adguard.org,DIRECT
+    - DOMAIN,local.adguard.org,DIRECT
+    - DOMAIN-SUFFIX,local,DIRECT
+    - IP-CIDR,127.0.0.0/8,DIRECT
+    - IP-CIDR,172.16.0.0/12,DIRECT
+    - IP-CIDR,192.168.0.0/16,DIRECT
+    - IP-CIDR,10.0.0.0/8,DIRECT
+    - IP-CIDR,17.0.0.0/8,DIRECT
+    - IP-CIDR,100.64.0.0/10,DIRECT
+    - IP-CIDR,224.0.0.0/4,DIRECT
+    - IP-CIDR6,fe80::/10,DIRECT
+    - DOMAIN-SUFFIX,cn,DIRECT
+    - DOMAIN-KEYWORD,-cn,DIRECT
+    - GEOIP,CN,DIRECT
+    - MATCH,Paily Connect
